@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    transform:  translateX(-50%);
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    
+    color: white;
+    z-index: 2;
+}
+header ul li{
+    margin: 25px 50px;
+    cursor: pointer;
+    
+    
+}
+ul, ol{
+    list-style: none;
+}
+
+body{
+    font-family: sans-serif
+}
+
+img, #vid{
+    max-width: 100%;
+    height: 100vh;
+}
+#vid{
+    overflow: hidden;
+}
+.slideshow{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+}
+
+.slider li, ul{
+    width: 100%;
+}
+body{
+    background: black;
+}
+.slider li img{
+  width: 100%;
+}
+.slider .caption
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    z-index: 1;
+}
+.slider .caption h1{
+  font-size: 50px;
+}
+.slider .caption p{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.pagination{
+    position: absolute;
+    top:90%;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 3;
+    
+}
+.pagination li{
+  font-size: 25px;
+  margin: 2px 2px;
+  color:#858585;
+  cursor: pointer;
+}
+.left, .right{
+    position: absolute;
+    top: 0;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,0);
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 2;
+    
+}
+.left{
+  left: 10px;
+}
+.right{
+  right: 10px;
+}
+.left:hover, .right:hover{
+    color: white;
+}
+.newsPanel{
+    
+    width: 100%;
+    height: 45vh;
+    
+    padding-top: 15px;
+   
+    background: white;
+    
+}
+.newsPanel h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.newsPanel ul{
+    display: flex;
+    justify-content: center;
+}
+.newsPanel li{
+    display: flex;
+    width: 25%;
+    height: 20vh;
+    margin: 15px;
+    
+}
+.newsPanel img{
+    width: 100%;
+    height: 100%;
+}
+.newsPanel section
+{
+    position: absolute;
+    width: 25%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    justify-content:flex-end;
+   
+}
+.newsPanel button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.characters{
+    height: 120vh;
+    width: 100%;
+}
+ .spotlight, .infoCharacters{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.spotlight{
+    z-index: 1;
+}
+.infoCharacters
+{
+    
+    float: left;
+    padding-top: 70vh;
+    padding-left: 70px;
+    
+    flex-direction: column;
+    
+    z-index: 2;
+}
+.infoCharacters h3{
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.infoCharacters p{
+    font-size: 25px;
+    display: flex;
+    justify-content:flex-end;
+    
+    margin-right: 70%;
+}
+.Roster
+{
+   position: relative;
+    
+    z-index: 2;
+    
+    top: 80%;
+    
+    
+}
+.Roster ul{
+    display: flex;
+    justify-content: center;
+}
+.Roster li
+{
+    width: 75px;
+    height: 150px;
+    margin: 15px 10px;
+    background: white;
+    
+    border-style:inset;
+    border-width: 5px;
+    
+    
+}
+.Roster img{
+    width: 100%;
+    height: 100%;
+}
